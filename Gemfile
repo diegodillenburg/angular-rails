@@ -14,7 +14,8 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'bower-rails'
 
-gem 'sass', '3.2.19' 
+gem 'sass', '3.2.19'
+
 group :test, :development do
   gem "rspec-rails", "~> 2.0"
   gem "factory_girl_rails", "~> 4.0"
@@ -41,5 +42,13 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+end
+
+# Heroku
+gem "foreman"
+group :production, :staging do
+  gem "rails_12factor"
+  gem "rails_stdout_logging"
+  gem "rails_serve_static_assets"
 end
 
