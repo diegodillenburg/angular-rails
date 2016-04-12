@@ -3,4 +3,5 @@ asset 'angular-route'
 asset 'angular-mocks'
 asset 'angular-resource'
 asset 'bootstrap-sass-official'
+asset 'angular-flash'
 # vim: ft=ruby
